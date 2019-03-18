@@ -22,7 +22,7 @@ func main() {
 }
 ```
 *The output of the example is:*
-![output package loader](logger.png)
+![output package loader](logger.PNG)
 
 ***
 
