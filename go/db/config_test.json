@@ -1,0 +1,9 @@
+{
+	"host": "",
+	"port" : "",
+	"user": "",
+	"pass": "",
+	"type" : "",
+	"dbname" : "",
+	"sslmode" : ""
+}

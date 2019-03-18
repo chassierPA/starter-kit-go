@@ -1,0 +1,49 @@
+/*package db
+
+import (
+	"encoding/json"
+	"fmt"
+	"io/ioutil"
+	"os"
+	"testing"
+	//_ "github.com/lib/pq"
+)
+
+const pathConfig = "./config_test.json"
+
+var db Database
+
+func TestMain(m *testing.M) {
+	file, err := ioutil.ReadFile(pathConfig)
+	if err != nil {
+		fmt.Println("Setup fail: ", err.Error())
+		os.Exit(1)
+	}
+	json.Unmarshal(file, &db)
+
+	var t testing.T
+	ret := m.Run()
+	TestOpen(&t)
+	TestPing(&t)
+	TestClose(&t)
+	os.Exit(ret)
+}
+
+func TestOpen(t *testing.T) {
+	if err := db.Open(); err != nil {
+		t.Error(err)
+	}
+}
+
+func TestPing(t *testing.T) {
+	if err := db.Ping(); err != nil {
+		t.Error(err)
+	}
+}
+
+func TestClose(t *testing.T) {
+	if err := db.DB.Close(); err != nil {
+		t.Error(err)
+	}
+}
+*/
